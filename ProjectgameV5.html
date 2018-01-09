@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Game</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="ProjectgameV5.css">
+    </head>
+    
+    <body onload="setup();">
+        <canvas id="drawingSurface" height="500" width="400" style="border-style:solid"></canvas>
+        <main>
+            <div id="floatright"></div>
+            <div id="questionZone">
+                <p id="getQuestion">THE QUESTION</p>
+                <input type="radio" value="1" name="getChoice" onchange="answerQuestion(1)"> <span id="getChoice1"></span>
+
+                <br>
+                <input type="radio" value="2" name="getChoice" onchange="answerQuestion(2)"> <span id="getChoice2"></span>
+
+                <br>
+                <input type="radio" value="3" name="getChoice" onchange="answerQuestion(3)"> <span id="getChoice3"></span>
+
+                <br>
+                <input type="radio" value="4" name="getChoice" onchange="answerQuestion(4)"> <span id="getChoice4"></span>
+
+                <br>
+                <p id="timerZone">Timer</p>
+            </div>
+            <p id="answerZone"></p>
+            <p id="scoreZone" </p>
+                <p id="rules"></p>
+                <input type="button" id="start" value="Start!" onclick="startGame();">
+                <input type="button" id="dice" value="Roll Dice" onclick="rollDice();" disabled="disabled">
+                <input type="button" value="About the Game" onclick="aboutGame();">
+                <input type="button" id="move" value="Move!" onclick="movement();" disabled="disabled">
+        </main>
+        <script src="ProjectgameV5.js">
+            
+        </script>
+    </body>
+
+</html>

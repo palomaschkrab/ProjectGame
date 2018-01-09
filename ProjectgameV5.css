@@ -1,0 +1,44 @@
+#drawingSurface{
+	float: left;
+}
+#questionZone {
+background-color: white;
+float: right;
+}
+
+body {
+background-color: 
+}
+
+.cd-popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+ 
+.cd-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+ 
+.cd-popup-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+ 
+.is-visible .cd-popup-container {
+  transform: translateY(0);
+}
+
+#timerZone {
+border: 5px dotted black;
+padding-left: 40px;
+padding-right: 10px;
+margin: 20px;
+text-align: center;
+font-size: 10em;
+color: red;
+
+};
